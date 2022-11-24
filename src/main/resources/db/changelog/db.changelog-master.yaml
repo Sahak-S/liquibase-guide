@@ -1,0 +1,7 @@
+databaseChangeLog: #պարամետր է, որում գտնվում են միգրացիաները
+  - include: # ակտիվ միգրացիաների ցուցակ
+      file: db/changelog/changeset/create-author-table.yaml # ուղին դեպի միգրացիոն ֆայլ
+  - include:
+      file: db/changelog/changeset/create-article-table.yaml
+  - include:
+      file: db/changelog/changeset/rename-author-name-to-fullname.yaml

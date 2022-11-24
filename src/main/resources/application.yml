@@ -1,0 +1,18 @@
+spring:
+  liquibase:
+    enabled: true
+  datasource:
+    url: jdbc:h2:file:./db # սկզբում նախագծի ֆայի անւնն  տվյալների բազայում db.mv.db
+    username: u # տվյալների բազայի ծածկանուն  ՙլոգիննՙ
+    password: 1 # տվյալների բազայի ծածկագիր   ՛пароль՛
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
+
+
+
+# http://localhost:8080/h2-console  բրաուզերում որոնոլ այս հղումով
